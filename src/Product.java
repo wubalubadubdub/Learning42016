@@ -39,6 +39,7 @@ public class Product {
 
     private final String name;
     private final int weight;
+    private int id;
 
     public String getName() {
         return name;
@@ -46,6 +47,14 @@ public class Product {
 
     public int getWeight() {
         return weight;
+    }
+
+    public int getId() { return id; }
+
+    public Product(String name, int weight, int id) {
+        this.id = id;
+        this.name = name;
+        this.weight = weight;
     }
 
     public Product(String name, int weight) {
