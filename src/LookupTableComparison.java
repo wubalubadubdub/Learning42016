@@ -64,9 +64,11 @@ public class LookupTableComparison {
         }
     }
 
+    /*
     public static void main(String[] args) {
 
         runLookups(new NaiveProductLookupTable());
         runLookups(new MapProductLookupTable());
     }
+    */
 }
