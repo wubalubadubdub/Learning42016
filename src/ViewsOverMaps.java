@@ -51,7 +51,12 @@ public class ViewsOverMaps {
         itemToRemove.add(ProductFixtures.floorPanel);
         products.removeAll(itemToRemove);*/
 
-        products.remove(ProductFixtures.floorPanel); // only removes one key-value pair
+        // easier way to do the above -- use the singletonList static method of
+        // Collections to pass in a single value when a Collection is required
+        System.out.println("Removing floor panels");
+        products.removeAll(Collections.singletonList(ProductFixtures.floorPanel));
+
+        // products.remove(ProductFixtures.floorPanel); // only removes one key-value pair
         System.out.println(products);
         System.out.println(idToProduct);
         System.out.println();
@@ -73,6 +78,18 @@ public class ViewsOverMaps {
         System.out.println();
 
         Java8MapEnhancements.runEnhancements();
+
+        System.out.println("Beginning rotation");
+
+        Rotate.showIt();
+
+        System.out.println("Beginning shuffling");
+
+        Shuffle.showIt();
+
+        System.out.println("Beginning sorting");
+
+        Sort.showIt();
 
     }
 }
