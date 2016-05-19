@@ -6,7 +6,7 @@ import java.util.function.Predicate;
  */
 public class ViewsOverMaps {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         final Map<Integer, Product> idToProduct = new HashMap<>();
         idToProduct.put(1, ProductFixtures.door);
@@ -47,9 +47,9 @@ public class ViewsOverMaps {
         // below we remove all of the specified Product(s) from the Map, and their associated keys.
         // removeAll takes a Collection, so we had to create a Collection even though here we only
         // wanted to remove a single Product type -- all the floorPanels in the Map.
-        /*Collection<Product> itemToRemove = new ArrayList<>();
+        *//*Collection<Product> itemToRemove = new ArrayList<>();
         itemToRemove.add(ProductFixtures.floorPanel);
-        products.removeAll(itemToRemove);*/
+        products.removeAll(itemToRemove);*//*
 
         // easier way to do the above -- use the singletonList static method of
         // Collections to pass in a single value when a Collection is required
@@ -91,5 +91,5 @@ public class ViewsOverMaps {
 
         Sort.showIt();
 
-    }
+    }*/
 }
